@@ -13,13 +13,12 @@ Before running the application, please ensure you have the following:
 1. Clone this repository to your local machine:
 
 ```
-      git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader
+git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader
 ```
 
 2. Update the configuration files:
-   
-  -- Navigate to the `configs` folder.
-  -- Open the `index_mappings.json` file and update it with your own index mappings.
+      - Navigate to the `configs` folder.
+      Open the `index_mappings.json` file and update it with your own index mappings.
   - Open the `index_settings.json` file and update it with your own index settings.
 
 3. Place JSON files:
