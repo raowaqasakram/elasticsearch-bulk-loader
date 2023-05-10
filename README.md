@@ -55,13 +55,8 @@ Before running the application, please ensure you have the following:
       sudo docker build -t <image-tag-name> .
      ```
 
-That's it! You can now run the application to load your JSON data into Elasticsearch.
-
-
-
 ## About Me
 
 This is developed with ❤️ by **Rao Waqas Akram**. 
 Visit my blog on [Hashnode](https://raowaqasakram.hashnode.dev/) and 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/raowaqasakram/).
-
