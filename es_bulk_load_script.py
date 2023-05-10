@@ -100,7 +100,6 @@ def main():
         print("Creating an index...")
         create_index(client)
 
-
     print("Indexing documents...")
     number_of_docs = len(DATASET_PATHS)
 

@@ -15,7 +15,15 @@ services:
     networks:
       - bulk_data_network
 
+# Connects the bulk data loader to an existing network where Elasticsearch is running on Docker
+# The specified network allows the bulk data loader to communicate with Elasticsearch
+# Ensure that the network name matches the actual network where Elasticsearch is running
+
 networks:
   bulk_data_network:
-    external:
+    # Specifies the name of the existing network where Elasticsearch is running
+    # Replace 'docker-elk-main-elon_elknetwork' with your actual network name
       name: docker-elk-main-elon_elknetwork
+
+    # Indicates that the network is external
+      external: true
