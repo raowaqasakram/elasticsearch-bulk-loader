@@ -18,9 +18,9 @@ Before running the application, please ensure you have the following:
 
 2. Update the configuration files:
    
- - Navigate to the `configs` folder.
- - Open the `index_mappings.json` file and update it with your own index mappings.
- - Open the `index_settings.json` file and update it with your own index settings.
+  - Navigate to the `configs` folder.
+  - Open the `index_mappings.json` file and update it with your own index mappings.
+  - Open the `index_settings.json` file and update it with your own index settings.
 
 3. Place JSON files:
    
