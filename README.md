@@ -17,6 +17,7 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader
 ```
 
 2. Update the configuration files:
+
       - Navigate to the `configs` folder.
       - Open the `index_mappings.json` file and update it with your own index mappings.
       - Open the `index_settings.json` file and update it with your own index settings.
@@ -41,15 +42,19 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader
         name: elasticsearch_existing_network
         external: true
      ```
+     
 ## Load Data
 
    - After completing all the configurations as mentioned above. You can run the container using the following command.
+
      ```
       sudo docker-compose up
      ```
 
 ## Build custom Docker Image
+
    - To modify the primary script file, es_bulk_load_script.py, and generate a Docker image using the given Dockerfile, execute the following command:
+
      ```
       sudo docker build -t <image-tag-name> .
      ```
