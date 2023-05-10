@@ -42,17 +42,26 @@ Before running the application, please ensure you have the following:
         name: elasticsearch_existing_network
         external: true
      ```
-     
-5. Dockerfile:
-   
-   - If you make any changes to the original file `es_bulk_load_script.py`, build the Docker image using the provided Dockerfile by running the following commmand
-     ```
-      sudo docker build -t <image-tag-name> .
-     ```
-6. Run Application
-   - Run application using the following command
+## Load Data
+
+After completing all the configurations as mentioned above. You can run the container using the following command.
      ```
       sudo docker-compose up
      ```
 
+## Build custom Docker Image
+To modify the primary script file, es_bulk_load_script.py, and generate a Docker image using the given Dockerfile, execute the following command:
+     ```
+      sudo docker build -t <image-tag-name> .
+     ```
+
 That's it! You can now run the application to load your JSON data into Elasticsearch.
+
+
+
+## About Me
+
+This is developed with ❤️ by **Rao Waqas Akram**. 
+Visit my blog on [Hashnode](https://raowaqasakram.hashnode.dev/) and 
+Connect with me on [LinkedIn](https://www.linkedin.com/in/raowaqasakram/).
+
