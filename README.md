@@ -18,22 +18,22 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader
 
 2. Update the configuration files:
       - Navigate to the `configs` folder.
-      Open the `index_mappings.json` file and update it with your own index mappings.
-  - Open the `index_settings.json` file and update it with your own index settings.
+      - Open the `index_mappings.json` file and update it with your own index mappings.
+      - Open the `index_settings.json` file and update it with your own index settings.
 
 3. Place JSON files:
    
- - Navigate to the `jsonData` folder.
- - Put all the JSON files you want to load into Elasticsearch in the `jsonData` folder.
+      - Navigate to the `jsonData` folder.
+      - Put all the JSON files you want to load into Elasticsearch in the `jsonData` folder.
 
 4. Docker Compose configuration:
    
- - Open the `docker-compose.yml` file.
- - In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
+      - Open the `docker-compose.yml` file.
+      - In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
      ```
      - ES_INDEX_NAME=elon_data_index
      ```
- - Make sure to link this application with the network where Elasticsearch is already running.
+      - Make sure to link this application with the network where Elasticsearch is already running.
      ```
      networks:
       bulk_data_network: 
@@ -43,13 +43,13 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader
      ```
 ## Load Data
 
-- After completing all the configurations as mentioned above. You can run the container using the following command.
+   - After completing all the configurations as mentioned above. You can run the container using the following command.
      ```
       sudo docker-compose up
      ```
 
 ## Build custom Docker Image
-- To modify the primary script file, es_bulk_load_script.py, and generate a Docker image using the given Dockerfile, execute the following command:
+   - To modify the primary script file, es_bulk_load_script.py, and generate a Docker image using the given Dockerfile, execute the following command:
      ```
       sudo docker build -t <image-tag-name> .
      ```
