@@ -79,7 +79,7 @@ def create_index(client):
     client.indices.create(
         index=ES_INDEX_NAME, settings=index_settings, mappings=index_mappings
     )
-    print(f"Created index: {ES_INDEX_NAME}")
+    print(f"Created a new index: {ES_INDEX_NAME}")
 
 
 def main():
@@ -93,8 +93,13 @@ def main():
     print("Creating an Elasticsearch client...")
     client = Elasticsearch(ES_HOST)
 
-    print("Creating an index...")
-    create_index(client)
+
+    if client.indices.exists(index=ES_INDEX_NAME):
+        print(f"Index already existing: {ES_INDEX_NAME}")
+    else:
+        print("Creating an index...")
+        create_index(client)
+
 
     print("Indexing documents...")
     number_of_docs = len(DATASET_PATHS)

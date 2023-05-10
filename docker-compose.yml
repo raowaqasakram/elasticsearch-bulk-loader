@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  es_bulk_data_loader_app:
+    image: es-bulk-data-loader:2.0
+    environment:
+      - INDEX_SETTINGS_FILE_ABSOLUTE_PATH=/app/configs/index_settings.json
+      - INDEX_MAPPINGS_FILE_ABSOLUTE_PATH=/app/configs/index_mappings.json
+      - JSON_BULK_DATA_ABSOLUTE_PATH=/app/jsonData
+      - ES_INDEX_NAME=elon_data_index_5
+      - ES_HOST=http://elasticsearch:9200
+    volumes:
+      - ./configs:/app/configs:ro
+      - ./jsonData:/app/jsonData:ro
+    networks:
+      - bulk_data_network
+
+networks:
+  bulk_data_network:
+    external:
+      name: docker-elk-main-elon_elknetwork
