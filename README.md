@@ -32,9 +32,10 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader.git
       - Open the `docker-compose.yml` file.
       - In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
 
-```
+````
   - ES_INDEX_NAME=elon_data_index
-```
+````
+ 
    - Make sure to link this application with the network where Elasticsearch is already running.
 
 ```
