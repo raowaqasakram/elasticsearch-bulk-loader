@@ -5,33 +5,34 @@ This repository contains the python script for loading JSON data into Elasticsea
 
 ## Prerequisites
 
-Before running the application, please ensure you have the following:
+Before running the application, please ensure you have the following installed on your system:
 
-- Docker installed on your system
+- Docker
+- Docker-compose
 
 ## Setup
 
-1. Clone this repository to your local machine:
+**1. Clone this repository to your local machine:**
 
 ```
 git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader.git
 ```
 
-2. Update the configuration files:
+**2. Update the configuration files:**
 
   - Navigate to the `configs` folder.
   - Open the `index_mappings.json` file and update it with your own index mappings.
   - Open the `index_settings.json` file and update it with your own index settings.
 
-3. Place JSON files:
+**3. Place JSON files:**
    
   - Navigate to the `jsonData` folder.
   - Put all the JSON files you want to load into Elasticsearch in the `jsonData` folder.
 
-4. Docker Compose configuration:
+**4. Docker Compose configuration:**
    
   -  Open the `docker-compose.yml` file.
-  - In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
+  -  In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
 
 ````
   - ES_INDEX_NAME=elon_data_index
