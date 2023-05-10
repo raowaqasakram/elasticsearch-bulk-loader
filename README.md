@@ -46,13 +46,13 @@ Before running the application, please ensure you have the following:
 5. Dockerfile:
    
    - If you make any changes to the original file `es_bulk_load_script.py`, build the Docker image using the provided Dockerfile by running the following commmand
-   ```
-   sudo docker build -t <image-tag-name> .
-   ```
+     ```
+      sudo docker build -t <image-tag-name> .
+     ```
 6. Run Application
   - Run application using the following command
-   ````
-   sudo docker-compose up
-   ````
+     ```
+      sudo docker-compose up
+     ```
 
 That's it! You can now run the application to load your JSON data into Elasticsearch.
