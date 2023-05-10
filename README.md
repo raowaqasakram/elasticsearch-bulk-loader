@@ -1,3 +1,4 @@
+
 # Loading JSON Files to Elasticsearch
 
 This repository contains the python script for loading JSON data into Elasticsearch using Docker.
@@ -18,19 +19,19 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader.git
 
 2. Update the configuration files:
 
-      - Navigate to the `configs` folder.
-      - Open the `index_mappings.json` file and update it with your own index mappings.
-      - Open the `index_settings.json` file and update it with your own index settings.
+  - Navigate to the `configs` folder.
+  - Open the `index_mappings.json` file and update it with your own index mappings.
+  - Open the `index_settings.json` file and update it with your own index settings.
 
 3. Place JSON files:
    
-      - Navigate to the `jsonData` folder.
-      - Put all the JSON files you want to load into Elasticsearch in the `jsonData` folder.
+  - Navigate to the `jsonData` folder.
+  - Put all the JSON files you want to load into Elasticsearch in the `jsonData` folder.
 
 4. Docker Compose configuration:
    
-      - Open the `docker-compose.yml` file.
-      - In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
+  -  Open the `docker-compose.yml` file.
+  - In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
 
 ````
   - ES_INDEX_NAME=elon_data_index
@@ -46,7 +47,7 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader.git
         external: true
 ```
      
-## Load Data
+## Load Data to ES
 After completing all the configurations as mentioned above. You can run the container using the following command.
 
 ```
