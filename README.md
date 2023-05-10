@@ -33,17 +33,17 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader.git
       - In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
 
 ```
-- ES_INDEX_NAME=elon_data_index
+  - ES_INDEX_NAME=elon_data_index
 ```
-      - Make sure to link this application with the network where Elasticsearch is already running.
+  - Make sure to link this application with the network where Elasticsearch is already running.
 
-     ```
+```
      networks:
       bulk_data_network: 
         # Replace 'elasticsearch_existing_network' with your actual network name of Elasticsearch
         name: elasticsearch_existing_network
         external: true
-     ```
+```
      
 ## Load Data
 After completing all the configurations as mentioned above. You can run the container using the following command.
