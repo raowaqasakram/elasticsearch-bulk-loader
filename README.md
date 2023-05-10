@@ -35,7 +35,7 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader.git
 ```
   - ES_INDEX_NAME=elon_data_index
 ```
-  - Make sure to link this application with the network where Elasticsearch is already running.
+   - Make sure to link this application with the network where Elasticsearch is already running.
 
 ```
      networks:
