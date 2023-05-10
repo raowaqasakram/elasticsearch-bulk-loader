@@ -13,7 +13,7 @@ Before running the application, please ensure you have the following:
 1. Clone this repository to your local machine:
 
 ```
-git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader
+git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader.git
 ```
 
 2. Update the configuration files:
