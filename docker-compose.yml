@@ -2,12 +2,12 @@ version: "3"
 
 services:
   es_bulk_data_loader_app:
-    image: es-bulk-data-loader:2.0
+    image: es-bulk-data-loader:1.0
     environment:
       - INDEX_SETTINGS_FILE_ABSOLUTE_PATH=/app/configs/index_settings.json
       - INDEX_MAPPINGS_FILE_ABSOLUTE_PATH=/app/configs/index_mappings.json
       - JSON_BULK_DATA_ABSOLUTE_PATH=/app/jsonData
-      - ES_INDEX_NAME=elon_data_index_5
+      - ES_INDEX_NAME=elon_data_index
       - ES_HOST=http://elasticsearch:9200
     volumes:
       - ./configs:/app/configs:ro
@@ -22,8 +22,8 @@ services:
 networks:
   bulk_data_network:
     # Specifies the name of the existing network where Elasticsearch is running
-    # Replace 'docker-elk-main-elon_elknetwork' with your actual network name
-      name: docker-elk-main-elon_elknetwork
+    # Replace 'elasticsearch_existing_network' with your actual network name
+      name: elasticsearch_existing_network
 
     # Indicates that the network is external
       external: true
