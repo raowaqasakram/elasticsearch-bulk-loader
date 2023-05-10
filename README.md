@@ -30,7 +30,7 @@ Before running the application, please ensure you have the following:
 4. Docker Compose configuration:
    
    - Open the `docker-compose.yml` file.
-   - In the `environment` section, update the following line by adding the elasticsearch index name where you want to load the data:
+   - In the `environment` section, update the following line with the elasticsearch index name where you want to load the data:
      ```
      - ES_INDEX_NAME=elon_data_index
      ```
