@@ -44,16 +44,14 @@ git clone https://github.com/raowaqasakram/elasticsearch-bulk-loader
      ```
      
 ## Load Data
-
-   - After completing all the configurations as mentioned above. You can run the container using the following command.
+After completing all the configurations as mentioned above. You can run the container using the following command.
 
      ```
       sudo docker-compose up
      ```
 
 ## Build custom Docker Image
-
-   - To modify the primary script file, es_bulk_load_script.py, and generate a Docker image using the given Dockerfile, execute the following command:
+To modify the primary script file, es_bulk_load_script.py, and generate a Docker image using the given Dockerfile, execute the following command:
 
      ```
       sudo docker build -t <image-tag-name> .
