@@ -50,7 +50,7 @@ Before running the application, please ensure you have the following:
       sudo docker build -t <image-tag-name> .
      ```
 6. Run Application
-  - Run application using the following command
+   - Run application using the following command
      ```
       sudo docker-compose up
      ```
