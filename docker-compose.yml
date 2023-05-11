@@ -2,7 +2,7 @@ version: "3"
 
 services:
   es_bulk_data_loader_app:
-    image: raowaqasakram/es-bulk-data-loader:1.0
+    image: raowaqasakram/es-bulk-data-loader:2.0
     environment:
       - INDEX_SETTINGS_FILE_ABSOLUTE_PATH=/app/configs/index_settings.json
       - INDEX_MAPPINGS_FILE_ABSOLUTE_PATH=/app/configs/index_mappings.json
