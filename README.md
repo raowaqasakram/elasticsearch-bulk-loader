@@ -1,7 +1,7 @@
 
 # Loading JSON Files to Elasticsearch
 
-This repository contains the python script for loading JSON data into Elasticsearch using Docker.
+This repository contains the python script for loading JSON data into Elasticsearch using Bulk API & Docker. [Complete Article](https://raowaqasakram.hashnode.dev/loading-json-files-into-elasticsearch-with-bulk-api-docker)
 
 ## Prerequisites
 
