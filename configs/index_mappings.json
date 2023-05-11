@@ -1,0 +1,42 @@
+{
+    "properties": {
+        "address1": {
+            "type": "keyword",
+            "normalizer": "case_insensitive_normalizer"
+        },
+        "address2": {
+            "type": "keyword",
+            "normalizer": "case_insensitive_normalizer"
+        },
+        "citName": {
+            "type": "keyword",
+            "normalizer": "case_insensitive_normalizer"
+        },
+        "staName": {
+            "type": "keyword",
+            "normalizer": "case_insensitive_normalizer"
+        },
+        "cntName": {
+            "type": "keyword",
+            "normalizer": "case_insensitive_normalizer"
+        },
+        "cryName": {
+            "type": "keyword",
+            "normalizer": "case_insensitive_normalizer"
+        },
+        "zip": {
+            "type": "keyword",
+            "normalizer": "case_insensitive_normalizer"
+        },
+        "zipext": {
+            "type": "keyword",
+            "normalizer": "case_insensitive_normalizer"
+        },
+        "dateCreated": {
+            "type": "keyword"
+        },
+        "dateModified": {
+            "type": "keyword"
+        }
+    }
+}
